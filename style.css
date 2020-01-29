@@ -2,23 +2,65 @@ body {
     background-color: burlywood;
     color: darkblue;
     font-family: sans-serif;
+    -webkit-animation-name: animation;
+    -webkit-animation-duration: 10s; 
+    animation-name: animation;
+    animation-duration: 10s;
+}
+@keyframes animation {
+    from {background-color: orange;}
+    to {background-color: burlywood;}
 }
 h1 {
+    border-style: outset;
     font: outline;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 .content {
     width: fit-content;
     margin: auto;
     text-align: center;
 }
 .button {
-    color: red;
+    color: darkblue;
+    font-size: 18px;
+    background-color: burlywood;
     text-decoration: none;
-    font-size: 22px;
+    padding: 2px 4px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 6px;
 }
-
 .button:hover {
-    text-decoration: underline;
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: grey;
+}
+input[type=submit] {
+    color: darkblue;
+    font-size: 18px;
+    background-color: burlywood;
+    text-decoration: none;
+    padding: 2px 4px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+input[type=submit]:hover {
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: grey;
+}
+input[type=text] {
+    color: darkblue;
+    font-size: 18px;
+    padding: 2px 4px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+input::placeholder {
+    color: darkblue;
 }

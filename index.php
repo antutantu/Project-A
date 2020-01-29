@@ -16,7 +16,7 @@
 <body>
     <div class="content">
         <h1>Favorite Wish</h1>
-        <a class="button" href="addWish.php">Add Wish</a>
+        <a class="button" href="addWish.php" button type="button">Add Wish</button></a>
         <ul>
         <?php
             $d=mktime(0, 0);
@@ -28,7 +28,7 @@
                 }
             ?>
         </ul>
-        <a class="button" href="clearWishes.php">Clear Wiches</a>
+        <a class="button" href="clearWishes.php" button type="button" onclick="alert('Are you sure?')">Clear Wiches</button></a>
     </div>
 </body>
 </html> 
