@@ -15,11 +15,15 @@ h1 {
     border-style: outset;
     font: outline;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-align: center;
 }
 .content {
     width: fit-content;
     margin: auto;
     text-align: center;
+}
+ul.demo {
+    list-style-type: none;
 }
 .button {
     color: darkblue;

@@ -17,16 +17,23 @@
     <div class="content">
         <h1>Favorite Wish</h1>
         <a class="button" href="addWish.php" button type="button">Add Wish</button></a>
-        <ul>
-        <?php
-            $d=mktime(0, 0);
-            echo date('H:i', $d)." My Wish is";
-            echo "<li>I want to buy a new gaming video card</li>";
-                foreach ($_SESSION['WishList'] as $Wish) {
-            echo date('H:i')." You Wish";
-            echo "<li>$Wish</li>";
-                }
+        <ul class="demo">
+        <li> 
+            <?php 
+            $i = 1; 
+            echo "$i. My wish is - I want to buy a new gaming video card"; 
             ?>
+        </li> 
+        <li>
+            <?php
+            foreach ($_SESSION['WishList'] as $Wish) { ?>
+        </li>
+        <li>
+            <?php
+            $i++;
+            echo "$i. You wish - $Wish";
+            } ?>
+        </li>
         </ul>
         <a class="button" href="clearWishes.php" button type="button" onclick="alert('Are you sure?')">Clear Wiches</button></a>
     </div>
