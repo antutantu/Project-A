@@ -18,10 +18,13 @@
         <h1>Favorite Wish</h1>
         <a class="button" href="addWish.php">Add Wish</a>
         <ul>
-            <li>I want to buy a new gaming video card</li>
-            <?php
+        <?php
+            $d=mktime(0, 0);
+            echo date('H:i', $d)." My Wish is";
+            echo "<li>I want to buy a new gaming video card</li>";
                 foreach ($_SESSION['WishList'] as $Wish) {
-                    echo "<li>$Wish</li>";
+            echo date('H:i')." You Wish";
+            echo "<li>$Wish</li>";
                 }
             ?>
         </ul>
