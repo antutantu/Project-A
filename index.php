@@ -25,6 +25,7 @@
                 }
             ?>
         </ul>
+        <a class="button" href="clearWishes.php">Clear Wiches</a>
     </div>
 </body>
 </html> 
