@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if (!isset($_SESSION['WishList'])) {
+        $_SESSION['WishList'] = array();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +19,11 @@
         <a class="button" href="addWish.php">Add Wish</a>
         <ul>
             <li>I want to buy a new gaming video card</li>
+            <?php
+                foreach ($_SESSION['WishList'] as $Wish) {
+                    echo "<li>$Wish</li>";
+                }
+            ?>
         </ul>
     </div>
 </body>

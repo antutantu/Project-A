@@ -11,7 +11,7 @@
     <div class="content">
     <h1>Favorite Wish</h1>
         <h3>Add your favorite wish</h3>
-        <form>
+        <form action="postWish.php" method="post">
             <label for="new-wish-title">My Wish</label>
             <input type="text" name="newWish" id="new-wish-title" placeholder="My wish is ...">
             <input type="submit" value="Add">
