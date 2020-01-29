@@ -10,9 +10,9 @@
 <body>
     <div class="content">
         <h1>Favorite Wish</h1>
+        <a class="button" href="addWish.php">Add Wish</a>
         <ul>
             <li>I want to buy a new gaming video card</li>
-            
         </ul>
     </div>
 </body>

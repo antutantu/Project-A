@@ -13,3 +13,12 @@ h1 {
     margin: auto;
     text-align: center;
 }
+.button {
+    color: red;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
