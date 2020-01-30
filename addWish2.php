@@ -1,3 +1,5 @@
+<?php include 'db.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +16,13 @@
     <div class="content">
     <h1>Favorite Wish</h1>
         <h3>Add your favorite wish</h3>
-        <form action="postWish2.php" method="post">
-        <input type="text" name="newWish" id="newWish" placeholder="My wish is ...">
+        <form action="MyWish.php" method="post">
+        <input type="text" name="newWishdb" id="newWishdb" placeholder="My wish is ...">
         <input type="submit" value="Add">
-        </form>
+        <?php if (isset($errors)) { ?>
+		<p><?php echo $errors; ?></p>
+		<?php } ?>
+	</form>
     </div>
 </body>
 </html>

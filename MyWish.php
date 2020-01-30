@@ -1,12 +1,10 @@
 <?php 
+    include 'db.php';
     session_start();
     if(isset($_SESSION['UserData']['Username'])){
 	header("location:login.php");
     exit;
-    if (!isset($_SESSION['WishList'])) {
-        $_SESSION['WishList'] = array();
     }
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,15 +25,13 @@
         <a class="button" href="addWish2.php" button type="button">Add Wish</button></a>
         <ul class="demo">
         <li>
-            <?php
-            $i = 1;
-            foreach ($_SESSION['WishList'] as $Wish) { ?>
+            <?php $i = 1; while ($row = mysqli_fetch_array($wishes)) { ?>
+			<?php echo $i; ?>
+			<?php echo $row['wish']; ?>
         </li>
         <li>
-            <?php
-            $i++;
-            echo "$i. You wish - $Wish";
-            } ?>
+        <a href="MyWish.php?delete_wish=<?php echo $row['id'] ?>">x</a> 
+            <?php $i++; } ?>	
         </li>
         </ul>
         <a class="button" href="runWishes.php" button type="button" >Run Wishes</button></a>
