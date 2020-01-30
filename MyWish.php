@@ -26,8 +26,7 @@
         <li>
             <?php $i = 1; while ($row = mysqli_fetch_array($wishes)) { ?>
             <a class="button">
-            <a class="button">
-            <?php echo $row['wish']; ?>
+            <?php echo $i.' '.$row['wish']; ?>
             </a>
         </li>
         </ul>
