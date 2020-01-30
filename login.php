@@ -1,5 +1,5 @@
 <?php 
-session_start();
+    session_start();
 	// Check Login form submitted	
 	if(isset($_POST['Submit'])){
 		// Define username and associated password array
