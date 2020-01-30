@@ -11,10 +11,12 @@ session_start();
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+        <div class="menu">
+        <?php include ('menu.php'); ?>
+        </div>
     <div class="content">
     <h1>Run Wishes</h1>
         <h3>Your wishes are underway...</h3>
-        <a class="button" href="index.php" button type="button" >Home</button></a>
     </div>
 </body>
 </html> 

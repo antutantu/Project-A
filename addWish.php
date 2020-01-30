@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+        <div class="menu">
+        <?php include ('menu.php'); ?>
+        </div>
     <div class="content">
     <h1>Favorite Wish</h1>
         <h3>Add your favorite wish</h3>

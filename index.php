@@ -14,7 +14,10 @@
     <title>My Wish</title>
 </head>
 <body>
-    <div class="content">
+        <div class="menu">
+        <?php include ('menu.php'); ?>
+        </div>
+        <div class="content">
         <h1>Favorite Wish</h1>
         <a class="button" href="addWish.php" button type="button">Add Wish</button></a>
         <ul class="demo">

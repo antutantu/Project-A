@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="content">
-<form method="post" action="login-DB.php">
+<form method="post" action="index.php">
     <h1>Please log in</h1>
     <input type="text" name="username" id="username" placeholder="Username">
     <input type="text" name="password" id="password" placeholder="Password">
