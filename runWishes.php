@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Add Wish</title>
+    <title>Run Wishes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="content">
-    <h1>Favorite Wish</h1>
-        <h3>Add your favorite wish</h3>
-        <form action="postWish.php" method="post">
-        <input type="text" name="newWish" placeholder="My wish is ...">
-        <input type="submit" value="Add">
-        </form>
+    <h1>Run Wishes</h1>
+        <h3>Your wishes are underway...</h3>
+        <a class="button" href="index.php" button type="button" >Home</button></a>
     </div>
 </body>
 </html> 
