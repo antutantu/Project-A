@@ -1,7 +1,7 @@
 <?php 
-    // create db manually, wish->wiches(2 columns)1-id/int-10/primary;2-wich/var200
+    // create db manually, wish->wishes(2 columns)1-id/int-10/primary;2-wish/var200
    
-    $errors = "";
+    $errors = "No Wishes";
 
 	// connect to database
 	$db = mysqli_connect("localhost", "root", "", "wish");
@@ -28,5 +28,5 @@
 	}
 
 	// select all wishes if page is visited or refreshed
-	$wishes = mysqli_query($db, "SELECT * FROM wish");
+	$wishes = mysqli_query($db, 'SELECT * FROM wishes');
 ?>

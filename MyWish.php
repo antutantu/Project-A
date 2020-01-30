@@ -17,12 +17,15 @@
 </head>
 <body>
         <div class="menu">
-        <?php include ('menu2.php'); ?>
+            <?php include ('menu2.php'); ?>
         </div>
         <div class="content">
         <h3>Congratulation! You have logged into password protected page.</h3>
         <h1>Favorite Wish</h1>
         <a class="button" href="addWish2.php" button type="button">Add Wish</button></a>
+            <?php if (isset($errors)) { ?>
+		    <p><?php echo $errors; ?></p>
+		    <?php } ?>
         <ul class="demo">
         <li>
             <?php $i = 1; while ($row = mysqli_fetch_array($wishes)) { ?>
@@ -37,7 +40,7 @@
         <a class="button" href="runWishes.php" button type="button" >Run Wishes</button></a>
         <br>
         <br>
-        <a class="button" href="clearWishes.php" button type="button" onclick="alert('Are you sure?')">Clear All Wiches</button></a>
+        <a class="button" href="clearWishes.php" button type="button" onclick="alert('Are you sure?')">Clear All Wishes</button></a>
     </div>
 </body>
 </html> 
