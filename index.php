@@ -35,8 +35,11 @@
             } ?>
         </li>
         </ul>
-        <a class="button" href="clearWishes.php" button type="button" onclick="alert('Are you sure?')">Clear Wiches</button></a>
+        <br>
         <a class="button" href="runWishes.php" button type="button" >Run Wishes</button></a>
+        <br>
+        <br>
+        <a class="button" href="clearWishes.php" button type="button" onclick="alert('Are you sure?')">Clear All Wiches</button></a>
     </div>
 </body>
 </html> 

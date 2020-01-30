@@ -12,7 +12,7 @@
     <h1>Favorite Wish</h1>
         <h3>Add your favorite wish</h3>
         <form action="postWish.php" method="post">
-        <input type="text" name="newWish" placeholder="My wish is ...">
+        <input type="text" name="newWish" id="newWish" placeholder="My wish is ...">
         <input type="submit" value="Add">
         </form>
     </div>
