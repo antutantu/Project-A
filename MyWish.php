@@ -1,7 +1,11 @@
-<?php session_start();
-if(!isset($_SESSION['UserData']['Username'])){
-header("location:login.php");
-exit;
+<?php 
+    session_start();
+    if(isset($_SESSION['UserData']['Username'])){
+	header("location:login.php");
+    exit;
+    if (!isset($_SESSION['WishList'])) {
+        $_SESSION['WishList'] = array();
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -15,11 +19,12 @@ exit;
 </head>
 <body>
         <div class="menu">
-        <?php include ('menu.php'); ?>
+        <?php include ('menu2.php'); ?>
         </div>
         <div class="content">
+        <h3>Congratulation! You have logged into password protected page.</h3>
         <h1>Favorite Wish</h1>
-        <a class="button" href="addWish.php" button type="button">Add Wish</button></a>
+        <a class="button" href="addWish2.php" button type="button">Add Wish</button></a>
         <ul class="demo">
         <li> 
             <?php 
@@ -29,6 +34,9 @@ exit;
         </li> 
         <li>
             <?php
+            if (isset($_SESSION['WishList'])) {
+               echo 'No Wishes';
+            }
             foreach ($_SESSION['WishList'] as $Wish) { ?>
         </li>
         <li>
