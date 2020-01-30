@@ -35,7 +35,6 @@
             } ?>
         </li>
         </ul>
-        <br>
         <a class="button" href="runWishes.php" button type="button" >Run Wishes</button></a>
         <br>
         <br>
