@@ -71,3 +71,15 @@ input::placeholder {
 .menu {
     list-style-type: none;
 }
+.wishes {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+
+    color: darkblue;
+    font-size: 18px;
+    padding: 2px 4px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 6px;
+}

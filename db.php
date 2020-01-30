@@ -1,7 +1,7 @@
 <?php 
     // create db manually, wish->wishes(2 columns)1-id/int-10/primary;2-wish/var200
    
-    $errors = "No Wishes";
+    $errors = " ";
 
 	// connect to database
 	$db = mysqli_connect("localhost", "root", "", "wish");

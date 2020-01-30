@@ -1,4 +1,4 @@
-<?php include 'db.php'; ?>
+<?php include ('db.php'); ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,19 +10,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div class="menu">
+    <div class="menu">
         <?php include ('menu2.php'); ?>
-        </div>
     <div class="content">
-    <h1>Favorite Wish</h1>
-        <h3>Add your favorite wish</h3>
-        <form action="MyWish.php" method="post">
-        <input type="text" name="newWishdb" id="newWishdb" placeholder="My wish is ...">
-        <input type="submit" value="Add">
-        <?php if (isset($errors)) { ?>
-		<p><?php echo $errors; ?></p>
-		<?php } ?>
-	</form>
+        <h1>Favorite Wish</h1>
+    <form action="MyWish.php" method="post" placeholder="My wish is ...">
+        <input type="text" name="wish">
+	    <button type="submit" name="submit" id="AddWish" class="button">Add</button>
+            <?php if (isset($errors)) { ?>
+		    <p><?php echo $errors; ?></p>
+		    <?php } ?>
+    </form>
     </div>
 </body>
 </html>
