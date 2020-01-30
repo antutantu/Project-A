@@ -26,17 +26,9 @@
         <h1>Favorite Wish</h1>
         <a class="button" href="addWish2.php" button type="button">Add Wish</button></a>
         <ul class="demo">
-        <li> 
-            <?php 
-            $i = 1; 
-            echo "$i. My wish is - I want to buy a new gaming video card"; 
-            ?>
-        </li> 
         <li>
             <?php
-            if (isset($_SESSION['WishList'])) {
-               echo 'No Wishes';
-            }
+            $i = 1;
             foreach ($_SESSION['WishList'] as $Wish) { ?>
         </li>
         <li>
