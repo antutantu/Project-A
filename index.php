@@ -38,6 +38,5 @@
         <a class="button" href="clearWishes.php" button type="button" onclick="alert('Are you sure?')">Clear Wiches</button></a>
         <a class="button" href="runWishes.php" button type="button" >Run Wishes</button></a>
     </div>
-    </div>
 </body>
 </html> 
