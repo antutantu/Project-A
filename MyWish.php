@@ -25,11 +25,9 @@
         <ul class="demo">
         <li>
             <?php $i = 1; while ($row = mysqli_fetch_array($wishes)) { ?>
-            <a class="button">
+            <a class="buttonP">
             <?php echo $i.' '.$row['wish']; ?>
             </a>
-        
-        
         <a href="MyWish.php?delete_wish=<?php echo $row['id'] ?>" class="button2"  button type="text" name="del" id="del" >DEL</a> 
              <?php $i++; } ?>
         </li>

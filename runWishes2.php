@@ -16,10 +16,12 @@
     <div class="content">
     <h1>Run Wishes</h1>
         <h3>Your wishes are underway...</h3>
+        <a class="buttonP">
         <?php $i = 1; while ($row = mysqli_fetch_array($wishes)) { ?>
 			<?php echo $i; ?>
 			<?php echo $row['wish']; ?>
             <?php $i++; } ?>
+        </a>
     </div>
 </body>
 </html> 

@@ -75,7 +75,7 @@ input::placeholder {
 .button2 {
     color: darkblue;
     font-size: 18px;
-    background-color: orange;
+    background-color: burlywood;
     text-decoration: none;
     padding: 2px 4px;
     text-align: center;
@@ -87,4 +87,21 @@ input::placeholder {
     color: whitesmoke;
     text-decoration: none;
     background-color: red;
+}
+.buttonP {
+    display: -webkit-inline-box;
+    color: darkblue;
+    font-size: 18px;
+    background-color: burlywood;
+    text-decoration: none;
+    padding: 2px 4px;
+    text-align: center;
+    cursor: none;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+.buttonP:hover {
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: black;
 }
