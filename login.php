@@ -40,15 +40,15 @@
     <h1>Please log in</h1>
     <input type="text" name="username" id="username" placeholder="Username">
     <input type="text" name="password" id="password" placeholder="Password">
+            <?php 
+            if(isset($msg)){ ?>
         <p>
-        <a class='buttonE'>
-        <?php 
-            if(isset($msg)){
-            echo $msg;
-        } ?>
-        </a>
-        </p>
-
+        <a class='buttonE'> 
+           <?php echo $msg; ?>
+       </a>
+       </p>
+       <?php } ?>
+    <br>
     <br>
     <input type="submit" value="Log In" class='Submit'>
     <br>
