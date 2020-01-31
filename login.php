@@ -18,8 +18,9 @@
 			header("location: /project-a/MyWish.php");
 			exit;
 		} else {
-			// Unsuccessful attempt: Set error message
-			$msg="<span style='color:red'>Invalid Login Details</span>";
+            // Unsuccessful attempt: Set error message
+            
+			$msg="<span >Invalid Login Details</span>";
 		}
     }
 ?>
@@ -39,11 +40,15 @@
     <h1>Please log in</h1>
     <input type="text" name="username" id="username" placeholder="Username">
     <input type="text" name="password" id="password" placeholder="Password">
+        <p>
+        <a class='buttonE'>
         <?php 
             if(isset($msg)){
             echo $msg;
         } ?>
-    <br>
+        </a>
+        </p>
+
     <br>
     <input type="submit" value="Log In" class='Submit'>
     <br>
