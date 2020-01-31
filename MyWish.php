@@ -29,7 +29,9 @@
             <?php echo $i.' '.$row['wish']; ?>
             </a>
         <a href="MyWish.php?delete_wish=<?php echo $row['id'] ?>" class="button2"  button type="text" name="del" id="del" >DEL</a> 
+        <p>
              <?php $i++; } ?>
+        </P>
         </li>
         </ul>
         </div>
