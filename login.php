@@ -2,17 +2,20 @@
 <?php 
     session_start();
     // Check Login form submitted	
-	if(isset($_POST['Submit'])){
+	if(isset($_POST['username']) && isset($_POST['password'])) {
+  
 		// Define username and associated password array
 		$logins = array('1' => '1','username1' => 'password1','username2' => 'password2');
 		// Check and assign submitted Username and Password to new variable
-		$Username = isset($_POST['Username']) ? $_POST['Username'] : '';
-		$Password = isset($_POST['Password']) ? $_POST['Password'] : '';
-		// Check Username and Password existence in defined array		
+		$Username = $_POST['username'];
+		$Password = $_POST['password'];
+        // Check Username and Password existence in defined array		
+
 		if (isset($logins[$Username]) && $logins[$Username] == $Password){
+
 			// Success: Set session variables and redirect to Protected page
-			$_SESSION['UserData']['Username']=$logins[$Username];
-			header("location:MyWish.php");
+			$_SESSION['UserData']['Username'] = $Username;
+			header("location: /project-a/MyWish.php");
 			exit;
 		} else {
 			// Unsuccessful attempt: Set error message
@@ -32,7 +35,7 @@
 </head>
 <body>
     <div class="content">
-<form method="post" action="MyWish.php">
+<form method="post">
     <h1>Please log in</h1>
     <input type="text" name="username" id="username" placeholder="Username">
     <input type="text" name="password" id="password" placeholder="Password">

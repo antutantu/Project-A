@@ -1,9 +1,9 @@
 <?php 
     include ('db.php');
     session_start();
-    if (isset($_SESSION['UserData']['Username'])){
-        header("location: MyWish.php");
-    }
+    // if (!isset($_SESSION['UserData']['Username'])){
+    //     header("location: MyWish.php");
+    // }
 ?>
 <!DOCTYPE html>
 <html lang="en">
