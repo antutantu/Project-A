@@ -28,14 +28,13 @@
             <a class="button">
             <?php echo $i.' '.$row['wish']; ?>
             </a>
-        </li>
-        </ul>
-        <ul class="demo">
-        <li>
-        <a href="MyWish.php?delete_wish=<?php echo $row['id'] ?>" class="button"  button type="text" name="del" id="del" >DEL</a> 
+        
+        
+        <a href="MyWish.php?delete_wish=<?php echo $row['id'] ?>" class="button2"  button type="text" name="del" id="del" >DEL</a> 
              <?php $i++; } ?>
         </li>
         </ul>
+        </div>
         <br>
         <br>
     <div class="content">

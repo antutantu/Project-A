@@ -26,6 +26,7 @@ ul.demo {
     list-style-type: none;
 }
 .button {
+    display: -webkit-inline-box;
     color: darkblue;
     font-size: 18px;
     background-color: burlywood;
@@ -70,4 +71,20 @@ input::placeholder {
 }
 .menu {
     list-style-type: none;
+}
+.button2 {
+    color: darkblue;
+    font-size: 18px;
+    background-color: orange;
+    text-decoration: none;
+    padding: 2px 4px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+.button2:hover {
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: red;
 }
