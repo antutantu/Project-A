@@ -1,6 +1,7 @@
+
 <?php 
     session_start();
-	// Check Login form submitted	
+    // Check Login form submitted	
 	if(isset($_POST['Submit'])){
 		// Define username and associated password array
 		$logins = array('1' => '1','username1' => 'password1','username2' => 'password2');
@@ -17,7 +18,7 @@
 			// Unsuccessful attempt: Set error message
 			$msg="<span style='color:red'>Invalid Login Details</span>";
 		}
-	}
+    }
 ?>
 
 <!DOCTYPE html>

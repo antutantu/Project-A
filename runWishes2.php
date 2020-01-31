@@ -18,8 +18,9 @@
         <h3>Your wishes are underway...</h3>
         <a class="buttonP">
         <?php $i = 1; while ($row = mysqli_fetch_array($wishes)) { ?>
-			<?php echo $i; ?>
-			<?php echo $row['wish']; ?>
+            <?php echo $i; ?>
+            <?php echo $row['wish']; ?>
+            <br>
             <?php $i++; } ?>
         </a>
     </div>

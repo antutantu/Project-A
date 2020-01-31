@@ -18,7 +18,9 @@
         <input type="text" name="wish">
 	    <button type="submit" name="submit" id="AddWish" class="button">Add</button>
             <?php if (isset($errors)) { ?>
-		    <p><?php echo $errors; ?></p>
+		    <p>
+                <?php echo $errors; ?>
+            </p>
 		    <?php } ?>
     </form>
     </div>

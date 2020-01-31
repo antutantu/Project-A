@@ -1,8 +1,8 @@
 <?php 
     include ('db.php');
     session_start();
-    if(isset($_SESSION['UserData']['Username'])){
-	header("location:login.php");
+    if (isset($_SESSION['UserData']['Username'])){
+        header("location: MyWish.php");
     }
 ?>
 <!DOCTYPE html>
